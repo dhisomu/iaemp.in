@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | IAEMP India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="IAEMP Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#membership">Membership</a></li>
+                <li><a href="contact.html" style="color: var(--primary);">Contact</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="index.html#membership" class="cta-btn" style="padding: 0.8rem 2rem; font-size: 0.9rem;">Register Now</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 160px; min-height: 100vh; background: radial-gradient(circle at 0% 0%, #1e293b 0%, #0f172a 70%);">
+        <div class="content-container">
+            <div class="section-title" style="text-align: left; margin-bottom: 60px;">
+                <h1 style="font-size: 4rem; margin-bottom: 1rem;">Get in <span class="text-gradient">Touch</span></h1>
+                <p style="color: var(--text-muted); font-size: 1.2rem;">Have a question? We're here to help energy professionals succeed.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; margin-bottom: 100px;">
+                <!-- Left: Contact Details -->
+                <div style="display: flex; flex-direction: column; gap: 3rem;">
+                    <div class="service-card" style="padding: 2.5rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);">
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <i class="fas fa-map-marked-alt fa-2x" style="color: var(--primary);"></i>
+                            <div>
+                                <h3 style="margin-bottom: 0.8rem; font-size: 1.4rem;">Administrative Office</h3>
+                                <p style="color: var(--text-muted); line-height: 1.8;">
+                                    IAEMP, K-8-82, Kalinga Nagar,<br>
+                                    Ghatikia, Bhubaneswar-751029<br>
+                                    Odisha, India
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card" style="padding: 2.5rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);">
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <i class="fas fa-building fa-2x" style="color: var(--primary);"></i>
+                            <div>
+                                <h3 style="margin-bottom: 0.8rem; font-size: 1.4rem;">Registered Office</h3>
+                                <p style="color: var(--text-muted); line-height: 1.8;">
+                                    7, Tirumala Commercial Complex,<br>
+                                    Paradise Circle, Secunderabad,<br>
+                                    Telangana – 500 003
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="service-card" style="padding: 2rem; text-align: center;">
+                            <i class="fas fa-phone-alt fa-2x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                            <h4 style="margin-bottom: 0.5rem;">Call Us</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">07739802112</p>
+                        </div>
+                        <div class="service-card" style="padding: 2rem; text-align: center;">
+                            <i class="fas fa-envelope-open fa-2x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                            <h4 style="margin-bottom: 0.5rem;">Email Us</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">iaempodisha@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-card">
+                    <form action="#" class="contact-form">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="input-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="John">
+                            </div>
+                            <div class="input-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com">
+                        </div>
+                        <div class="input-group">
+                            <label>How can we help?</label>
+                            <select>
+                                <option>Membership Query</option>
+                                <option>Certification Support</option>
+                                <option>Urja Watch Submission</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea placeholder="Write your message here..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="cta-btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="join">
+        <div class="footer-container" style="max-width: 1400px; margin: 0 auto; padding: 0 8%;">
+            <div style="margin-bottom: 60px;">
+                <img src="logo.png" alt="IAEMP" style="height: 60px; margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; align-items: flex-start;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Administrative Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            IAEMP, K-8-82, Kalinga Nagar,<br>
+                            Ghatikia, Bhubaneswar-751029<br>
+                            Odisha, India<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 07739802112<br>
+                            <i class="fas fa-envelope" style="margin-right: 8px;"></i> iaempodisha@gmail.com
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Registered Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            7, Tirumala Commercial Complex,<br>
+                            Paradise Circle, Secunderabad,<br>
+                            Telangana – 500 003<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 040 27810214
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Connect</h4>
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 30px; padding-top: 10px;">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="contact.html" class="cta-btn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.8rem; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+                &copy; 2026 IAEMP India. Professional Body of Energy Managers & Auditors.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
