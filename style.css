@@ -82,7 +82,62 @@ nav ul li a {
   color: var(--text-muted);
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--primary);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn i {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  transition: var(--transition);
+}
+
+.dropdown:hover .dropbtn i {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: var(--bg-alt);
+  min-width: 220px;
+  box-shadow: var(--shadow);
+  z-index: 1;
+  border-radius: 16px;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  border: 1px solid var(--glass);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: var(--transition);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  color: var(--text-muted);
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background: var(--glass);
   color: var(--primary);
 }
 

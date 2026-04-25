@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Membership | IAEMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Join IAEMP as an organizational member. Showcase your commitment to energy conservation and sustainability.">
+    <style>
+        .desktop-br { display: block; }
+        @media (max-width: 768px) {
+            .desktop-br { display: none; }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="IAEMP Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="central-council.html">Central Council</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn active">Membership <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="individual-membership.html">Individual</a>
+                        <a href="organization-membership.html">Organization</a>
+                        <a href="student-membership.html">Student</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="#apply" class="cta-btn" style="padding: 0.8rem 2rem; font-size: 0.9rem;">Join IAEMP Now</a>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 60vh; padding: 180px 8% 100px;">
+        <div class="content-container">
+            <div class="hero-content" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h1>Organization <span class="text-gradient">Membership</span></h1>
+                <p style="font-size: 1.4rem; line-height: 1.8; margin: 0 auto 4rem; max-width: 800px;">For Industries, ESCOs, Consulting Firms, and Energy Efficient Product Companies. <br class="desktop-br">Partner with India's premier body of energy professionals.</p>
+                <div class="hero-btns" style="display: flex; justify-content: center;">
+                    <a href="#apply" class="cta-btn">Fill Application Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" style="background: var(--bg-alt); border-radius: 60px 60px 0 0;">
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Organization <span class="text-gradient">Benefits</span></h2>
+                <p>One-time Fee: <strong>₹11,000/-</strong> (For Firms, Companies, and Societies)</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-bullhorn fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Free Advertisements</h3>
+                    <p style="color: var(--text-muted);">4 free advertisements per year in our e-publications, Google groups, and national social media channels.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-plus fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Employee Nominations</h3>
+                    <p style="color: var(--text-muted);">Nominate up to 2 employees to represent the organization in IAEMP technical discussions and events.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hdd fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Resource Kit</h3>
+                    <p style="color: var(--text-muted);">32 GB Pen Drive containing industrial energy audit tools, renewable energy data, and sustainability templates.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-book-reader fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Technical Library</h3>
+                    <p style="color: var(--text-muted);">Complimentary technical books and research papers from the IAEMP "Mission Sustainable India" series.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Discounts</h3>
+                    <p style="color: var(--text-muted);">Special discounted rates for employees in in-house training programs and national seminars.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Corporate Recognition</h3>
+                    <p style="color: var(--text-muted);">Official Organizational Membership Certificate and recognition on the IAEMP website and publications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply">
+        <div class="content-container">
+            <div class="section-title">
+                <h2>Organization Form</h2>
+                <p style="color: var(--text-muted);">Application for Corporate/Organizational Membership</p>
+            </div>
+
+            <div class="contact-form-card" style="max-width: 1000px; margin: 0 auto;">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <label>Organization Name</label>
+                        <input type="text" placeholder="Full Legal Name of the Entity" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="input-group">
+                            <label>Type of Organization</label>
+                            <select required>
+                                <option value="">Select Category</option>
+                                <option value="industry">Designated Consumer / Industry</option>
+                                <option value="esco">ESCO / Em-AEA Firm</option>
+                                <option value="consulting">Consulting Company</option>
+                                <option value="renewable">Renewable Energy Company</option>
+                                <option value="products">Energy Efficient Product Company</option>
+                                <option value="utility">Power Utility</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Website URL</label>
+                            <input type="url" placeholder="https://www.example.com">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Nature of Business / Services</label>
+                        <textarea rows="3" placeholder="Briefly describe your products or services related to energy/environment" required></textarea>
+                    </div>
+
+                    <div style="padding-top: 1rem; border-top: 1px solid var(--glass);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary);">Office Address</h4>
+                        <div class="input-group">
+                            <textarea rows="4" placeholder="Full Postal Address with Pin Code" required></textarea>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 1rem; border-top: 1px solid var(--glass);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary);">Contact Person Details</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Designation</label>
+                                <input type="text" placeholder="Designation" required>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                            <div class="input-group">
+                                <label>Mobile Number</label>
+                                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="email@organization.com" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 1rem; border-top: 1px solid var(--glass);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary);">Employee Nominations (Max 2)</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="input-group">
+                                <label>Nominee 1 Name</label>
+                                <input type="text" placeholder="Full Name">
+                            </div>
+                            <div class="input-group">
+                                <label>Nominee 2 Name</label>
+                                <input type="text" placeholder="Full Name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Details Section -->
+                    <div style="padding: 2rem; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary); font-size: 1.2rem;">Payment Details</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="input-group">
+                                <label>Membership Amount (INR)</label>
+                                <input type="text" value="11000" readonly style="background: rgba(255,255,255,0.05);">
+                            </div>
+                            <div class="input-group">
+                                <label>Date of Payment</label>
+                                <input type="date" required>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                            <div class="input-group">
+                                <label>Payment Mode</label>
+                                <select id="payment-mode-org" required>
+                                    <option value="upi">UPI / Online Transfer</option>
+                                    <option value="cheque">Cheque / Demand Draft</option>
+                                </select>
+                            </div>
+                            <div class="input-group" id="ref-group-org">
+                                <label id="ref-label-org">UPI Transaction ID / Ref No.</label>
+                                <input type="text" placeholder="Enter Transaction ID" required>
+                            </div>
+                        </div>
+                        <div class="input-group" id="bank-group-org" style="margin-top: 1.5rem; display: none;">
+                            <label>Drawn on (Bank Name & Branch)</label>
+                            <input type="text" placeholder="e.g. SBI, Main Branch">
+                        </div>
+                    </div>
+
+                    <div class="input-group" style="margin-top: 1rem;">
+                        <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                            <input type="checkbox" style="width: auto; margin-top: 6px;" required>
+                            <span style="font-size: 0.95rem; line-height: 1.6;">We solemnly affirm that the information furnished above is true. If admitted as an Organizational Member, we undertake to abide by the Rules and Regulations of the Association.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="cta-btn" style="width: 100%; margin-top: 1.5rem; font-size: 1.1rem; padding: 1.2rem;">Submit Organization Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="offline" style="background: var(--bg-alt);">
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Offline <span class="text-gradient">Joining</span></h2>
+                <p>Fee: ₹11,000/- | Pay via Demand Draft, Cheque, or Direct Bank Transfer.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem;">
+                <div class="service-card">
+                    <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Bank Details</h3>
+                    <p style="color: var(--text-muted); line-height: 2;">
+                        <strong>Account Name:</strong> Indian Association of Energy Management Professionals<br>
+                        <strong>Account No:</strong> 3675101001647<br>
+                        <strong>Bank:</strong> Canara Bank<br>
+                        <strong>Branch:</strong> Jayadev Vihar, Bhubaneswar<br>
+                        <strong>IFSC Code:</strong> CNRB0003675
+                    </p>
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px dashed var(--primary); text-align: center;">
+                        <i class="fas fa-qrcode fa-5x" style="color: var(--primary); margin-bottom: 1rem; opacity: 0.5;"></i>
+                        <p style="font-size: 0.8rem; color: var(--primary);">UPI QR CODE UPCOMING</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 1.5rem;">Submission Process</h3>
+                    <ul style="color: var(--text-muted); list-style: none; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; gap: 1rem;">
+                            <i class="fas fa-envelope-open-text" style="color: var(--primary); font-size: 1.2rem;"></i>
+                            <span>Send filled application and payment to: <strong>K-8-82, Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha-751029</strong></span>
+                        </li>
+                        <li style="display: flex; gap: 1rem;">
+                            <i class="fas fa-paper-plane" style="color: var(--primary); font-size: 1.2rem;"></i>
+                            <span>Email soft copies to: <strong>membership@iaemp.in</strong> with copy to <strong>secretary@iaemp.in</strong></span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 3rem;">
+                        <a href="assets/Invitation to join IAEMP as member.doc" class="btn-secondary">
+                            <i class="fas fa-file-download" style="margin-right: 10px;"></i> Download Application Form (DOC)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div style="margin-bottom: 60px;">
+                <img src="logo.png" alt="IAEMP" style="height: 60px; margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; align-items: flex-start;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Administrative Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            IAEMP, K-8-82, Kalinga Nagar,<br>
+                            Ghatikia, Bhubaneswar-751029<br>
+                            Odisha, India<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 07739802112<br>
+                            <i class="fas fa-envelope" style="margin-right: 8px;"></i> iaempodisha@gmail.com
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Registered Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            7, Tirumala Commercial Complex,<br>
+                            Paradise Circle, Secunderabad,<br>
+                            Telangana – 500 003<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 040 27810214
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Connect</h4>
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 30px; padding-top: 10px;">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="contact.html" class="cta-btn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <p
+                style="text-align: center; color: var(--text-muted); font-size: 0.8rem; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+                &copy; 2026 IAEMP India. Professional Body of Energy Managers & Auditors.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Payment Toggle Logic
+        document.getElementById('payment-mode-org').addEventListener('change', function() {
+            const mode = this.value;
+            const refLabel = document.getElementById('ref-label-org');
+            const bankGroup = document.getElementById('bank-group-org');
+            
+            if(mode === 'cheque') {
+                refLabel.textContent = 'Cheque / DD Number';
+                bankGroup.style.display = 'block';
+            } else {
+                refLabel.textContent = 'UPI Transaction ID / Ref No.';
+                bankGroup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

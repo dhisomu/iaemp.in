@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Membership | IAEMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Join IAEMP as a student member. Empowering the next generation of energy professionals.">
+    <style>
+        .desktop-br { display: block; }
+        @media (max-width: 768px) {
+            .desktop-br { display: none; }
+        }
+        #education-fields .input-group label {
+            transition: var(--transition);
+        }
+        .remove-education {
+            background: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            padding: 0.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            align-self: flex-end;
+            margin-bottom: 1.2rem;
+        }
+        .remove-education:hover {
+            background: #ef4444;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="IAEMP Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="central-council.html">Central Council</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn active">Membership <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="individual-membership.html">Individual</a>
+                        <a href="organization-membership.html">Organization</a>
+                        <a href="student-membership.html">Student</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="#apply" class="cta-btn" style="padding: 0.8rem 2rem; font-size: 0.9rem;">Join IAEMP Now</a>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 60vh; padding: 180px 8% 100px;">
+        <div class="content-container">
+            <div class="hero-content" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h1>Join as <span class="text-gradient">Student Member</span></h1>
+                <p style="font-size: 1.4rem; line-height: 1.8; margin: 0 auto 4rem; max-width: 800px;">Empowering engineering and science students to become the <br class="desktop-br">"Conscience Keepers to the nation on energy matters". <br class="desktop-br">Join the IAEMP ecosystem today.</p>
+                <div class="hero-btns" style="display: flex; justify-content: center;">
+                    <a href="#apply" class="cta-btn">Fill Application Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" style="background: var(--bg-alt); border-radius: 60px 60px 0 0;">
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Membership <span class="text-gradient">Benefits</span></h2>
+                <p>Invest in your professional future for a one-time fee of only <strong>₹500/-</strong>.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-comments fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Technical Discussions</h3>
+                    <p style="color: var(--text-muted);">Participation in discussions & posting of technical queries on energy efficiency and renewable energy.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-certificate fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>E-Certificate</h3>
+                    <p style="color: var(--text-muted);">Receive a professional IAEMP Student Membership E-Certificate upon successful registration.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Networking</h3>
+                    <p style="color: var(--text-muted);">Access to IAEMP student Google group and Telegram group membership for seamless collaboration.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-graduate fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Internships</h3>
+                    <p style="color: var(--text-muted);">Opportunity to work as an intern for various assignments of IAEMP and its professional members.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chalkboard-teacher fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Mentorship</h3>
+                    <p style="color: var(--text-muted);">Our Life Members mentor students and provide necessary work and monetary support from time to time.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe-asia fa-3x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Flagship Programs</h3>
+                    <p style="color: var(--text-muted);">Participate in Energy Ambassador program, IAEMP virtual Academy, and Mission Sustainable India.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; padding: 3rem; background: var(--glass); border-radius: 24px; border: 1px solid var(--glass);">
+                <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">Common Benefits</h4>
+                <p style="color: var(--text-muted);">All members are entitled for discounts in fee for in-house training programs and are also eligible for free nominations for seminars, workshops etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply">
+        <div class="content-container">
+            <div class="section-title">
+                <h2>Application Form</h2>
+                <p style="color: var(--text-muted);">Please provide your details below. You can also apply offline by following the instructions below the form.</p>
+            </div>
+
+            <div class="contact-form-card" style="max-width: 1000px; margin: 0 auto;">
+                <form class="contact-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+                        <div class="input-group">
+                            <label>Surname</label>
+                            <input type="text" placeholder="Surname" required>
+                        </div>
+                        <div class="input-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Middle Name">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="input-group">
+                            <label>Father's Name</label>
+                            <input type="text" placeholder="Father's Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Date of Birth</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="input-group">
+                            <label>Mobile Number</label>
+                            <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Preferred Mailing Option</label>
+                        <select required>
+                            <option value="email">Email</option>
+                            <option value="business">Business Address</option>
+                            <option value="home">Home Address</option>
+                        </select>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="input-group">
+                            <label>Home Address</label>
+                            <textarea rows="4" placeholder="Full Postal Address with Pin Code" required></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label>Business / College Address</label>
+                            <textarea rows="4" placeholder="Full College/Institute Address with Pin Code" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Brief Description of Specialisation</label>
+                        <textarea rows="4" style="overflow-y: auto; resize: vertical;" placeholder="e.g. Energy Management, Renewable Energy, Industrial Automation, etc."></textarea>
+                    </div>
+
+                    <!-- Educational Record Section -->
+                    <div style="padding: 2rem; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--primary); font-size: 1.2rem;">Educational Record</h4>
+                            <button type="button" id="add-education" class="cta-btn" style="padding: 0.5rem 1rem; font-size: 0.8rem; border-radius: 8px;">
+                                <i class="fas fa-plus"></i> Add Record
+                            </button>
+                        </div>
+                        <div id="education-fields">
+                            <div style="display: grid; grid-template-columns: 1fr 1.5fr 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                                <div class="input-group"><label style="font-size: 0.75rem;">Course</label><input type="text" placeholder="Degree"></div>
+                                <div class="input-group"><label style="font-size: 0.75rem;">Institute/University</label><input type="text" placeholder="Name"></div>
+                                <div class="input-group"><label style="font-size: 0.75rem;">Location</label><input type="text" placeholder="City"></div>
+                                <div class="input-group"><label style="font-size: 0.75rem;">Period</label><input type="text" placeholder="From-To"></div>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">Note: You can attach a separate sheet when sending via email if you have more records.</p>
+                    </div>
+
+                    <!-- IAEMP Interest Section -->
+                    <div style="padding: 2rem; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary); font-size: 1.2rem;">Membership Motivation</h4>
+                        <div class="input-group" style="margin-bottom: 2rem;">
+                            <label style="margin-bottom: 1rem; display: block;">What are you looking for from IAEMP? (Select all that apply)</label>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem; color: var(--text-muted);">
+                                    <input type="checkbox" name="interest" value="networking" style="width: auto;"> Networking with Professionals
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem; color: var(--text-muted);">
+                                    <input type="checkbox" name="interest" value="internship" style="width: auto;"> Internship Opportunities
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem; color: var(--text-muted);">
+                                    <input type="checkbox" name="interest" value="knowledge" style="width: auto;"> Technical Knowledge & Research
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem; color: var(--text-muted);">
+                                    <input type="checkbox" name="interest" value="certification" style="width: auto;"> Certification & Training
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem; color: var(--text-muted);">
+                                    <input type="checkbox" name="interest" value="events" style="width: auto;"> Participation in Energy Events
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem; color: var(--text-muted);">
+                                    <input type="checkbox" name="interest" value="mentorship" style="width: auto;"> Mentorship from Life Members
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Why are you joining IAEMP as a student member?</label>
+                            <textarea rows="4" style="overflow-y: auto; resize: vertical;" placeholder="Your motivation and goals..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Reference Section -->
+                    <div style="padding: 2rem; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary); font-size: 1.2rem;">Reference (Optional)</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="input-group">
+                                <label>Reference Name</label>
+                                <input type="text" placeholder="Name of Person Recommending">
+                            </div>
+                            <div class="input-group">
+                                <label>Relationship & Years Known</label>
+                                <input type="text" placeholder="e.g. Professor, 3 Years">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Details Section -->
+                    <div style="padding: 2rem; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass);">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--primary); font-size: 1.2rem;">Payment Details</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="input-group">
+                                <label>Membership Amount (INR)</label>
+                                <input type="text" value="500" readonly style="background: rgba(255,255,255,0.05);">
+                            </div>
+                            <div class="input-group">
+                                <label>Date of Payment</label>
+                                <input type="date" required>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                            <div class="input-group">
+                                <label>Payment Mode</label>
+                                <select id="payment-mode-student" required>
+                                    <option value="upi">UPI / Online Transfer</option>
+                                    <option value="cheque">Cheque / Demand Draft</option>
+                                </select>
+                            </div>
+                            <div class="input-group" id="ref-group-student">
+                                <label id="ref-label-student">UPI Transaction ID / Ref No.</label>
+                                <input type="text" placeholder="Enter Transaction ID" required>
+                            </div>
+                        </div>
+                        <div class="input-group" id="bank-group-student" style="margin-top: 1.5rem; display: none;">
+                            <label>Drawn on (Bank Name & Branch)</label>
+                            <input type="text" placeholder="e.g. SBI, Main Branch">
+                        </div>
+                    </div>
+
+                    <div class="input-group" style="margin-top: 1rem;">
+                        <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                            <input type="checkbox" style="width: auto; margin-top: 6px;" required>
+                            <span style="font-size: 0.95rem; line-height: 1.6;">I solemnly affirm and declare that the information furnished above is true and correct. I hereby undertake that if admitted as a member of the Association, I shall be bound by the Rules and Regulations and Bye-laws made there under and as amended from time to time.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="cta-btn" style="width: 100%; margin-top: 1.5rem; font-size: 1.1rem; padding: 1.2rem;">Submit Application</button>
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Note: After submission, our team will review your application and contact you for the membership fee payment.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="offline" style="background: var(--bg-alt);">
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Offline <span class="text-gradient">Instructions</span></h2>
+                <p>If you prefer to pay via Demand Draft, Cheque, or Direct Bank Transfer.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem;">
+                <div class="service-card">
+                    <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Bank Details</h3>
+                    <p style="color: var(--text-muted); line-height: 2;">
+                        <strong>Account Name:</strong> Indian Association of Energy Management Professionals<br>
+                        <strong>Account No:</strong> 3675101001647<br>
+                        <strong>Bank:</strong> Canara Bank<br>
+                        <strong>Branch:</strong> Jayadev Vihar, Bhubaneswar<br>
+                        <strong>IFSC Code:</strong> CNRB0003675
+                    </p>
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px dashed var(--primary); text-align: center;">
+                        <i class="fas fa-qrcode fa-5x" style="color: var(--primary); margin-bottom: 1rem; opacity: 0.5;"></i>
+                        <p style="font-size: 0.8rem; color: var(--primary);">UPI QR CODE UPCOMING</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 1.5rem;">Submission Process</h3>
+                    <ul style="color: var(--text-muted); list-style: none; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; gap: 1rem;">
+                            <i class="fas fa-envelope-open-text var(--primary)" style="color: var(--primary); font-size: 1.2rem;"></i>
+                            <span>Filled-in application along with cheque / DD may be sent to: <strong>K-8-82, Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha-751029</strong></span>
+                        </li>
+                        <li style="display: flex; gap: 1rem;">
+                            <i class="fas fa-paper-plane" style="color: var(--primary); font-size: 1.2rem;"></i>
+                            <span>Soft copies can be emailed to <strong>membership@iaemp.in</strong> with a copy to <strong>secretary@iaemp.in</strong> and <strong>iaempodisha@gmail.com</strong></span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 3rem;">
+                        <a href="assets/Invitation to join IAEMP as student members.doc" class="btn-secondary">
+                            <i class="fas fa-file-download" style="margin-right: 10px;"></i> Download Application Form (DOC)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div style="margin-bottom: 60px;">
+                <img src="logo.png" alt="IAEMP" style="height: 60px; margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; align-items: flex-start;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Administrative Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            IAEMP, K-8-82, Kalinga Nagar,<br>
+                            Ghatikia, Bhubaneswar-751029<br>
+                            Odisha, India<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 07739802112<br>
+                            <i class="fas fa-envelope" style="margin-right: 8px;"></i> iaempodisha@gmail.com
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Registered Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            7, Tirumala Commercial Complex,<br>
+                            Paradise Circle, Secunderabad,<br>
+                            Telangana – 500 003<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 040 27810214
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Connect</h4>
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 30px; padding-top: 10px;">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="contact.html" class="cta-btn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <p
+                style="text-align: center; color: var(--text-muted); font-size: 0.8rem; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+                &copy; 2026 IAEMP India. Professional Body of Energy Managers & Auditors.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('add-education').addEventListener('click', function() {
+            const container = document.getElementById('education-fields');
+            const newEntry = document.createElement('div');
+            newEntry.style.display = 'grid';
+            newEntry.style.gridTemplateColumns = '1fr 1.5fr 1fr 1fr auto';
+            newEntry.style.gap = '1rem';
+            newEntry.style.marginBottom = '1rem';
+            newEntry.style.alignItems = 'flex-end';
+            
+            newEntry.innerHTML = `
+                <div class="input-group"><label style="font-size: 0.75rem;">Course</label><input type="text" placeholder="Degree"></div>
+                <div class="input-group"><label style="font-size: 0.75rem;">Institute/University</label><input type="text" placeholder="Name"></div>
+                <div class="input-group"><label style="font-size: 0.75rem;">Location</label><input type="text" placeholder="City"></div>
+                <div class="input-group"><label style="font-size: 0.75rem;">Period</label><input type="text" placeholder="From-To"></div>
+                <button type="button" class="remove-education" title="Remove Record"><i class="fas fa-trash"></i></button>
+            `;
+            
+            container.appendChild(newEntry);
+            
+            newEntry.querySelector('.remove-education').addEventListener('click', function() {
+                newEntry.remove();
+            });
+        });
+
+        // Payment Toggle Logic
+        document.getElementById('payment-mode-student').addEventListener('change', function() {
+            const mode = this.value;
+            const refLabel = document.getElementById('ref-label-student');
+            const bankGroup = document.getElementById('bank-group-student');
+            
+            if(mode === 'cheque') {
+                refLabel.textContent = 'Cheque / DD Number';
+                bankGroup.style.display = 'block';
+            } else {
+                refLabel.textContent = 'UPI Transaction ID / Ref No.';
+                bankGroup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

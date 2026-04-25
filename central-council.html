@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Council | IAEMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description"
+        content="Central Council of IAEMP - Indian Association of Energy Management Professionals. Meet our leadership and office bearers.">
+    <style>
+        .council-section {
+            padding: 160px 8% 80px;
+            background: radial-gradient(circle at 100% 0%, #1e293b 0%, #0f172a 70%);
+            min-height: 100vh;
+        }
+
+        .president-card {
+            display: grid;
+            grid-template-columns: 0.4fr 1.6fr;
+            gap: 4rem;
+            background: var(--card-bg);
+            padding: 4rem;
+            border-radius: 40px;
+            border: 1px solid var(--glass);
+            margin-top: 60px;
+            box-shadow: var(--shadow);
+            align-items: center;
+        }
+
+        .president-img-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .president-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: 24px;
+            border: 4px solid var(--glass);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .president-info h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        .president-title {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .president-bio {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .bio-para {
+            margin-bottom: 1.5rem;
+        }
+
+        .bio-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bio-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .bio-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        @media (max-width: 1100px) {
+            .president-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 3rem 2rem;
+            }
+            .president-img {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+
+        .member-contact {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--glass);
+            padding-top: 1.5rem;
+        }
+
+        .member-contact a {
+            color: var(--primary);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .member-contact a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="IAEMP Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="central-council.html" class="active" style="color: var(--primary);">Central Council</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Membership <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="individual-membership.html">Individual</a>
+                        <a href="organization-membership.html">Organization</a>
+                        <a href="student-membership.html">Student</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="index.html#membership" class="cta-btn" style="padding: 0.8rem 2rem; font-size: 0.9rem;">Join IAEMP Now</a>
+        </div>
+    </header>
+
+    <section class="council-section">
+        <div class="content-container">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <h2>Central <span class="text-gradient">Council</span></h2>
+                <p>Governing body of the Indian Association of Energy Management Professionals, leading India's energy transition through professional excellence.</p>
+            </div>
+
+            <!-- National President -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/NationalPresidentShriVivekKShukla.png" alt="Shri Vivek K Shukla" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National President</span>
+                    <h2>Shri Vivek K Shukla</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Mr Vivek K Shukla Vice President - Assago Industries P.Ltd with his calm, composed and vigorous demeanor radiates the exuberance of more than three decades of rich bespoking experience in leadership positions.</p>
+                        <p class="bio-para">He is an acclaimed Post graduate FMCG & Distillery technocrat imbibed from his experience with various renowned Sugar & Ethanol manufacturing units with Refinery/Cogen/Distillery/Bottling/Chemicals/CBG/Manure/KAS/Wan & Waste Management with so many award winning concept to execution works as Unit Head, Technical Controller, Plant Head, Energy Head & Auth. Signatory at various groups like Bajaj, Parle, Mawana, Olam, Sanjivani, Uttam so on.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:vkshukla007@gmail.com"><i class="fas fa-envelope"></i> vkshukla007@gmail.com</a>
+                        <a href="tel:+918979622323"><i class="fas fa-phone"></i> +91 8979622323</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Vice President -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/VP_Shri Dr VENKATA SUDHEER L  .png" alt="Shri Dr VENKATA SUDHEER L" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Vice President</span>
+                    <h2>Shri Dr VENKATA SUDHEER L</h2>
+                    <div class="president-bio">
+                        <ul class="bio-list">
+                            <li>Founder of VSL Prayag Energy Systems & Services Group of Companies</li>
+                            <li>With 36 years experience, conducted over 1000 industrial Energy Management Assignments across India and Southeast Asia</li>
+                            <li>Expertise in Implementation of Energy Efficiency, Decarbonization & Sustainable Development practices</li>
+                            <li>Implemented Pathbreaking Energy Saving technologies in various Utility systems viz-viz' HVAC Systems, Pumps, Air Compressor Systems, Hydraulic Pumps & Thermal systems etc.,</li>
+                            <li>Delivered Carbon Credit earning projects</li>
+                            <li>Presently working on Innovative Biomass Plantation systems for Carbon Sequestration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Secretary -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Secretary Shri Dr.Kamalakannan.png" alt="Shri Dr KAMALAKANNAN VASANTHAN" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Secretary</span>
+                    <h2>Shri Dr KAMALAKANNAN VASANTHAN</h2>
+                    <div class="president-bio">
+                        <ul class="bio-list">
+                            <li>MD & Founder of BES, Bharat Engineering Solutions is a Distinguished Techno-Commercial, P&L leader with Exceptional Expertise in Energy Management, Fluid Engineering, and Industrial Systems.</li>
+                            <li>Proven P&L Head with extensive experience in Sales, Service, Marketing, NPD & NBD – with Deep knowledge in Pumps (Centrifugal, Vacuum, Process), Heat Exchangers, Hydraulics and Energy-Efficient Systems.</li>
+                            <li>Well Known for Transforming Energy into Efficiency, Systems into Performance</li>
+                            <li>Life Member at IAEMP, IPA, ISHRAE & TeckXpert. Current Secretary IAEMP, South Zone Coimbatore Chapter & Central Board Member of SPIN & IAEMP. Most invited speaker at Institution's, Industries and Association's on Energy Management</li>
+                            <li>A very well-known face at Energy Management Fraternity and did / mentored / guided 1000+ Energy Audits on PAN India @ Pumps & Systems and Heat Exchangers – in which around 80% plus was successfully implemented.</li>
+                        </ul>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:kamal@bharatenggsolutions.com"><i class="fas fa-envelope"></i> kamal@bharatenggsolutions.com</a>
+                        <a href="tel:+919443069901"><i class="fas fa-phone"></i> +91 9443069901</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Junior Secretary -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Jr.SecretaryShriBalveerSinghJ.png" alt="Shri Balveer Singh J." class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Junior Secretary</span>
+                    <h2>Shri Balveer Singh J.</h2>
+                    <div class="president-bio">
+                        <ul class="bio-list">
+                            <li>20+ years of experience as an Electrical System Design Engineer, specializing in efficient electrical systems and engineering.</li>
+                            <li>BEE Certified Energy Auditor and Corporate Member of the Institution of Engineers (India) [IEI].</li>
+                            <li>Aspirant for IGBC Accredited Professional (IGBC AP) certification; currently pursuing international Certified Energy Auditor (CEA) from the Association of Energy Engineers (AEE).</li>
+                            <li>Strong commitment to energy-efficient design, net-zero targets, and sustainable building practices.</li>
+                            <li>Keen interest in advancing expertise in energy management and environmental sustainability.</li>
+                        </ul>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:jatavbs_05@rediffmail.com"><i class="fas fa-envelope"></i> jatavbs_05@rediffmail.com</a>
+                        <a href="tel:+918369480447"><i class="fas fa-phone"></i> +91 8369480447</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/PradeepSir.png" alt="Shri Pradeep Kumar" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri Pradeep Kumar</h2>
+                    <div class="president-bio">
+                        <ul class="bio-list">
+                            <li>Past President & Past Secretary of IAEMP.</li>
+                            <li>Electrical Engineer having 40+ Years of experience in Design & Maintenance of E&M Installation including Energy Audit of Residential, Industrial & Institutional Buildings.</li>
+                            <li>Expertise in Design of Electrical works of Metro Railway.</li>
+                        </ul>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:pradeepgarg@outlook.com"><i class="fas fa-envelope"></i> pradeepgarg@outlook.com</a>
+                        <a href="tel:+919810764865"><i class="fas fa-phone"></i> +91 9810764865</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Dr Somasundaram -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/DrSom.png" alt="Shri Dr SOMASUNDARAM" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri Dr SOMASUNDARAM</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Dr. Somasundaram Balasubramaniam is an entrepreneur, digital transformation leader, and educator with over 24 years of experience in manufacturing, smart systems, and Industry 4.0. He holds a Doctorate in Business Administration from the Swiss School of Business & Management, with research focus in data science, AI, and transformational leadership.</p>
+                        <p class="bio-para">He is the Founder & Managing Director of DoMore Tech Consultancy Services Pvt. Ltd. and the driving force behind OpsSim (xify.in), a 3D digital twin platform for industrial simulation and decision experimentation.</p>
+                        <p class="bio-para">As a Professor of Practice and Visiting Faculty across engineering and business schools, Dr. Balasubramaniam actively mentors students and young professionals, supporting entrepreneurship and guiding aspiring founders in building technology-driven startups.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:messagesomu@gmail.com"><i class="fas fa-envelope"></i> messagesomu@gmail.com</a>
+                        <a href="tel:+917708757575"><i class="fas fa-phone"></i> +91 7708757575</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri Bibhu Charan Swain -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri BIBHU CHARAN SWAIN  .png" alt="Shri BIBHU CHARAN SWAIN" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri BIBHU CHARAN SWAIN</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Senior Consultant at Power Tech Consultants and an Accredited Energy Auditor. Holds an M.Tech from Indian Institute of Science with ~27 years of experience in engineering, projects, consultancy, and industry leadership. Conducted energy audits and advised industries on electricity regulatory and power trading matters. He is a State Advisory Committee Member of Odisha Electricity Regulatory Commission. He has delivered 100+ awareness programs on energy conservation, renewable energy, carbon credits, and sustainable development.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:infopwrtch@gmail.com"><i class="fas fa-envelope"></i> infopwrtch@gmail.com</a>
+                        <a href="tel:+919437155337"><i class="fas fa-phone"></i> +91 9437155337</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri Sanjeeb Kumar Purohit -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri SANJEEB KUMAR PUROHIT  .png" alt="Shri SANJEEB KUMAR PUROHIT" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri SANJEEB KUMAR PUROHIT</h2>
+                    <div class="president-bio">
+                        <ul class="bio-list">
+                            <li>Electrical Engineer having 29+ Years of experience in Electrical Maintenance, Project Management and Energy management of Thermal Power Plant and Large Process Industries.</li>
+                            <li>BEE Certified Energy Auditor</li>
+                            <li>Supervisor Certificate (EHT) Govt of Odisha</li>
+                        </ul>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:sanjeeb.sk@gmail.com"><i class="fas fa-envelope"></i> sanjeeb.sk@gmail.com</a>
+                        <a href="tel:+919937299493"><i class="fas fa-phone"></i> +91 9937299493</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri Dr S ANGALAESWARI -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri Dr S ANGALAESWARI  .png" alt="Shri Dr S ANGALAESWARI" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri Dr S ANGALAESWARI</h2>
+                    <div class="president-bio">
+                        <ul class="bio-list">
+                            <li>Assistant Dean, Sponsored Research & Industrial Consultancy (SPORIC).</li>
+                            <li>Associate Professor – School of Electrical Engineering, Vellore Institute of Technology (VIT), Chennai.</li>
+                            <li>Well known face in Energy Management Professionals group.</li>
+                            <li>Mentored and conducted multiple trainings and seminars across India & South Asia.</li>
+                        </ul>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:spkavisp@gmail.com"><i class="fas fa-envelope"></i> spkavisp@gmail.com</a>
+                        <a href="tel:+919841812993"><i class="fas fa-phone"></i> +91 9841812993</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri MOHANA SUNDARAM K -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/MohanaSundaramSir.png" alt="Shri MOHANA SUNDARAM K" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri MOHANA SUNDARAM K</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Having 24 years of teaching and research experience, presently as Professor and Head in EEE department at KPR Institute of Engineering and Technology, and a Senior member in IEEE, and also Vice chair for IEEE PELS Madras section. His research interests include Renewable Energy systems, Power electronics, Intelligent controllers, and Power systems.</p>
+                        <p class="bio-para">He has completed a funded project of worth Rs. 52.84 lakhs sponsored by DST, Government of India. Under his guidance, 12 Ph.D. scholars completed PhD from Anna University, Chennai. He received the ISTE Faculty National Award 2022 for Innovative Work in Engineering and Technology.</p>
+                        <p class="bio-para">He has published six books with international publishers and serves as a reviewer for IEEE, Springer, and Elsevier journals. He is an active member of IEEE, IE, ISTE, and IAENG. He has published 100 papers in international journals such as IEEE, Elsevier, and Springer.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:kumohanasundaram@gmail.com"><i class="fas fa-envelope"></i> kumohanasundaram@gmail.com</a>
+                        <a href="tel:+919600047399"><i class="fas fa-phone"></i> +91 9600047399</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri MAHAVEER JAIN -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri MAHAVEER JAIN  .png" alt="Shri MAHAVEER JAIN" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri MAHAVEER JAIN</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Chartered Accountant with over 25 years of hands-on experience, specializing in guiding MSME toward sustainable growth while unlocking significant cost efficiencies. Leveraging data analytics, helps businesses optimize energy consumption, improve operational efficiency, and recover savings through power bill reduction and refunds.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:mkjain@eemc.in"><i class="fas fa-envelope"></i> mkjain@eemc.in</a>
+                        <a href="tel:+919768123725"><i class="fas fa-phone"></i> +91 9768123725</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Prof. (Dr.) Rabinarayan Satpathy -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/DrRabinarayanSatpathy.png" alt="Prof. (Dr.) Rabinarayan Satpathy" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Prof. (Dr.) Rabinarayan Satpathy</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Prof. Satpathy is the Vice-Chancellor of Jagadguru Kripalu University, and a visionary academic leader with over 32 years of experience in higher education, research, and academic governance. He holds a D.Sc., two Ph.D. degrees, and a Post-Doctoral Fellowship from NIT Rourkela.</p>
+                        <p class="bio-para">With more than 300 research publications, 21 books, and 63 patents (including 32 granted), he has made significant contributions to academia and innovation. He has successfully guided 16 Ph.D. scholars and numerous postgraduate researchers. His areas of expertise include Artificial Intelligence, Machine Learning, Soft Computing, and Mathematical Modelling.</p>
+                        <p class="bio-para">He strongly advocates a value-based, research-driven, and spiritually aligned university ecosystem.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:rabinarayan.satpathy@gmail.com"><i class="fas fa-envelope"></i> rabinarayan.satpathy@gmail.com</a>
+                        <a href="tel:+919437571307"><i class="fas fa-phone"></i> +91 9437571307</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Dr. RAJESH ARORA -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Dr. RAJESH ARORA  .png" alt="Dr. RAJESH ARORA" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Dr. RAJESH ARORA</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Dr. RAJESH KUMAR ARORA obtained the B. Tech. & Master of Engineering (ME) degrees in Electrical Engineering from Delhi College of Engineering, University of Delhi, India in 1999 and 2003 respectively. He completed his PhD in grounding system design from UPES, Dehradun.</p>
+                        <p class="bio-para">He has presented his papers in national and international seminars & written many articles for many leading magazines of India.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:rpdarora@gmail.com"><i class="fas fa-envelope"></i> rpdarora@gmail.com</a>
+                        <a href="tel:+919818651574"><i class="fas fa-phone"></i> +91 9818651574</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri. UDHAYA KUMAR BV -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri. UDHAYA KUMAR BV   .png" alt="Shri. UDHAYA KUMAR BV" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri. UDHAYA KUMAR BV</h2>
+                    <div class="president-bio">
+                        <ul class="bio-list">
+                            <li>Holding Master Degree in Thermal Power Engineering.</li>
+                            <li>Power Plant Professional with 40+ years of experience in EPC / O&M / Performance / ISO 140001/ OSHAS 18001 EHS & Energy / Asset Audits.</li>
+                            <li>Served as Scientist in ISRO / VSSC and in Digital Twin – IIoT Industry 4.0 of TCS and Power Consultant for KPMG.</li>
+                            <li>Achieved numerous Awards in Energy / Water conservation / Best Industrial relationship from National & International bodies.</li>
+                            <li>Presently Serving with BC Business Consulting GmbH @ Uzbekistan 1106 MW Gas Power Project Site as Project Team leader.</li>
+                            <li>Active Participant in IAEMP SDG - 5Ps discussions and authored two SDG topics for MSI 2022.</li>
+                        </ul>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:udhay61@yahoo.co.in"><i class="fas fa-envelope"></i> udhay61@yahoo.co.in</a>
+                        <a href="tel:+919650139995"><i class="fas fa-phone"></i> +91 9650139995</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri RAMESH THAKUR -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri RAMESH THAKUR   .png" alt="Shri RAMESH THAKUR" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri RAMESH THAKUR</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Mechanical Engineer with over 29 years of hands-on experience in Forge Shop Maintenance. Specialize in maintenance of Energy controlled Screw Presses, Crank Presses and compressed air energy saving projects.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:rt_thakurramesh@yahoo.com"><i class="fas fa-envelope"></i> rt_thakurramesh@yahoo.com</a>
+                        <a href="tel:+919425302978"><i class="fas fa-phone"></i> +91 94253 02978</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri RAJEEV SOOD -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri RAJEEV SOOD  .png" alt="Shri RAJEEV SOOD" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri RAJEEV SOOD</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Rajeev Sood – Over 30 years of cross-functional experience in Project Management and Business Development in the Corporate & Development sector. Hands on experience in incubation and growth of several organisations including government agencies, NGOs and companies.</p>
+                        <p class="bio-para">He has managed key portfolios and positions in Groups such as the GMR Group, Suzlon Group amongst the others in his corporate tenure. Under his leadership, over 1000 rooftop solar power projects aggregating to over 25 MW capacity has been executed in past 12 years.</p>
+                        <p class="bio-para">He has also successfully handled pre-project activities including land aggregation, permissions and approvals for over 200 MW capacity in central India.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:Barada.Subudhi12@gmail.com"><i class="fas fa-envelope"></i> Barada.Subudhi12@gmail.com</a>
+                        <a href="tel:+919861486746"><i class="fas fa-phone"></i> +91 9861486746</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Sh VED B SUNEJA -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Sh VED B SUNEJA  .png" alt="Sh VED B SUNEJA" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Sh VED B SUNEJA</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">Sh. Suneja is a seasoned Drilling Engineer (Oil & Gas Wells) who served ONGC for about 34 years. During his distinguished career, he gained extensive experience in Drilling operations, Project implementation, and Energy Management.</p>
+                        <p class="bio-para">He was associated with Energy Conservation (ENCON) initiatives through GHG reduction Project in the Steel Re-rolling sector during his deputation with Petroleum Conservation Research Association. Sh. Suneja is a Certified Energy Auditor accredited by BEE. He has conducted energy audits across diverse sectors, including Ceramic industry cluster, Steel re-rolling cluster, Commercial buildings, and Oil terminals.</p>
+                        <p class="bio-para">Additionally, he has been involved in the ERP project implementation across all ONGC locations, supporting the organization's digital transformation and operational integration.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:Vbsoneja@gmail.com"><i class="fas fa-envelope"></i> Vbsoneja@gmail.com</a>
+                        <a href="tel:+919868282241"><i class="fas fa-phone"></i> +91 9868282241</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- National Council Member - Shri BARADA PRASANNA SUBUDHI -->
+            <div class="president-card">
+                <div class="president-img-container">
+                    <img src="assets/2026CentralCouncil/Shri BARADA PRASANNA SUBUDHI  .png" alt="Shri BARADA PRASANNA SUBUDHI" class="president-img">
+                </div>
+                <div class="president-info">
+                    <span class="president-title">National Council Member</span>
+                    <h2>Shri BARADA PRASANNA SUBUDHI</h2>
+                    <div class="president-bio">
+                        <p class="bio-para">As an Energy Manager at Reliance Industry and an Ex-Employee of M/s. Power Tech Consultants. Having around ~14 years of experience in engineering, Energy Efficiency, ESCO projects, consultancy and industry leadership.</p>
+                        <p class="bio-para">Conducted energy audits and power trading. Also completed various energy conservation Projects, renewable energy, and sustainable development.</p>
+                    </div>
+                    <div class="member-contact">
+                        <a href="mailto:Barada.Subudhi12@gmail.com"><i class="fas fa-envelope"></i> Barada.Subudhi12@gmail.com</a>
+                        <a href="tel:+919861486746"><i class="fas fa-phone"></i> +91 9861486746</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="join">
+        <div class="footer-container">
+            <div style="margin-bottom: 60px;">
+                <img src="logo.png" alt="IAEMP" style="height: 60px; margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; align-items: flex-start;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Administrative Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            IAEMP, K-8-82, Kalinga Nagar,<br>
+                            Ghatikia, Bhubaneswar-751029<br>
+                            Odisha, India<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 07739802112<br>
+                            <i class="fas fa-envelope" style="margin-right: 8px;"></i> iaempodisha@gmail.com
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Registered Office</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+                            7, Tirumala Commercial Complex,<br>
+                            Paradise Circle, Secunderabad,<br>
+                            Telangana – 500 003<br>
+                            <i class="fas fa-phone" style="margin-right: 8px; margin-top: 10px;"></i> 040 27810214
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Connect</h4>
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 30px; padding-top: 10px;">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="contact.html" class="cta-btn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <p
+                style="text-align: center; color: var(--text-muted); font-size: 0.8rem; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+                &copy; 2026 IAEMP India. Professional Body of Energy Managers & Auditors.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
