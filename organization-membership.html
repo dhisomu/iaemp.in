@@ -41,8 +41,11 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div style="display: flex; gap: 1rem; align-items: center;">
-            <a href="#apply" class="cta-btn" style="padding: 0.8rem 2rem; font-size: 0.9rem;">Join IAEMP Now</a>
+        <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+            <a href="#apply" class="cta-btn join-btn" style="padding: 0.8rem 2rem; font-size: 0.9rem;">Join IAEMP Now</a>
+            <div class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
@@ -148,7 +151,7 @@
 
                     <div style="padding-top: 1rem; border-top: 1px solid var(--glass);">
                         <h4 style="margin-bottom: 1.5rem; color: var(--primary);">Contact Person Details</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-grid-2">
                             <div class="input-group">
                                 <label>Name</label>
                                 <input type="text" placeholder="Full Name" required>
@@ -158,7 +161,7 @@
                                 <input type="text" placeholder="Designation" required>
                             </div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                        <div class="form-grid-2" style="margin-top: 1.5rem;">
                             <div class="input-group">
                                 <label>Mobile Number</label>
                                 <input type="tel" placeholder="+91 XXXXX XXXXX" required>
@@ -172,7 +175,7 @@
 
                     <div style="padding-top: 1rem; border-top: 1px solid var(--glass);">
                         <h4 style="margin-bottom: 1.5rem; color: var(--primary);">Employee Nominations (Max 2)</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-grid-2">
                             <div class="input-group">
                                 <label>Nominee 1 Name</label>
                                 <input type="text" placeholder="Full Name">
@@ -187,7 +190,7 @@
                     <!-- Payment Details Section -->
                     <div style="padding: 2rem; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass);">
                         <h4 style="margin-bottom: 1.5rem; color: var(--primary); font-size: 1.2rem;">Payment Details</h4>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-grid-2">
                             <div class="input-group">
                                 <label>Membership Amount (INR)</label>
                                 <input type="text" value="11000" readonly style="background: rgba(255,255,255,0.05);">
@@ -236,7 +239,7 @@
                 <p>Fee: ₹11,000/- | Pay via Demand Draft, Cheque, or Direct Bank Transfer.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem;">
+            <div class="contact-grid">
                 <div class="service-card">
                     <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Bank Details</h3>
                     <p style="color: var(--text-muted); line-height: 2;">
@@ -277,7 +280,7 @@
         <div class="footer-container">
             <div style="margin-bottom: 60px;">
                 <img src="logo.png" alt="IAEMP" style="height: 60px; margin-bottom: 40px;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; align-items: flex-start;">
+                <div class="footer-grid">
                     <div>
                         <h4 style="color: white; margin-bottom: 2rem; font-size: 1.1rem; letter-spacing: 1px; border-bottom: 1px solid rgba(16, 185, 129, 0.2); padding-bottom: 10px; display: block;">Administrative Office</h4>
                         <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">

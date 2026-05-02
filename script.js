@@ -60,5 +60,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Mobile Menu Toggle ---
+    const mobileToggle = document.querySelector('.mobile-nav-toggle');
+    const nav = document.querySelector('nav');
+    
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+
+    // Close mobile menu on link click
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+    });
+
     console.log("IAEMP Dark Mode Engine Initialized.");
 });
